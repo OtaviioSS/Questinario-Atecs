@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=1, user-scalable=no">
+
     <title>AtecsTI Questionario</title>
+    <link rel="stylesheet" href="flowtype.js">
     <link rel="shortcut icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="index.css">
 
@@ -21,8 +24,8 @@
         <fieldset style="width: 100%;" class="form-group">
             <legend style="color: aliceblue;text-align: center;"> </legend>
             <div class="container">
-                <div  id="logo" class="logo">
-                    <img src="logo.png" >
+                <div id="logo" class="logo">
+                    <img src="logo.png">
                 </div>
                 <input type="hidden" id="field-id" value="" />
 
@@ -84,7 +87,7 @@
                 <label>4. Seu sistema de gerenciamento é personalizado para atender às suas necessidades?
                     <div class="form-demanda">
                         <label class="radioButton">Sim
-                            <input type="radio" name="radioAtende"  value="Sim" id="simAtende" onclick="funcAtende();" />
+                            <input type="radio" name="radioAtende" value="Sim" id="simAtende" onclick="funcAtende();" />
                             <span class="circle"></span>
                         </label>
                         </br>
@@ -157,12 +160,12 @@
                     <div class="form-melhor">
                         <div class="input-group-prepend">
                             <div class="input-group-text" style="font-size: 28px; height: 110%;">R$</div>
-                            <input type="text" data-mask="000.000.000.000.000,00", data-mask-reverse="true" step="any" value="" id="txtMensal" class="form-control"
-                                style="width: 380px;" placeholder="0,00" />
-                            
+                            <input type="text" data-mask="000.000.000.000.000,00" , data-mask-reverse="true" step="any"
+                                value="" id="txtMensal" class="form-control" style="width: 380px;" placeholder="0,00" />
+
                         </div>
                         <div class="form-demanda">
-                            <label class="radioButton" >Sim
+                            <label class="radioButton">Sim
                                 <input type="radio" name="radioManutencao" value="Sim" id="simAtende"
                                     onclick="funcManutencaoAtende();" />
                                 <span class="circle"></span>
@@ -191,7 +194,7 @@
 
                     <div class="form-melhor">
                         <div class="form-demanda">
-                            <label class="radioButton" >Sim
+                            <label class="radioButton">Sim
                                 <input type="radio" name="radioOnline" value="Sim" id="simOnline"
                                     onclick="funcTerPlataformaOnline();" />
                                 <span class="circle"></span>
@@ -202,15 +205,15 @@
                                 <span class="circle"></span>
                             </label>
                             <div class="input-group-prepend">
-                            
+
                                 <div class="input-group-text" style="font-size: 28px; height: 110%;">R$</div>
-                                <input type="text" step="any" data-mask="000.000.000.000.000,00", data-mask-reverse="true" 
-                               value="" id="valorIdeal" class="form-control"
+                                <input type="text" step="any" data-mask="000.000.000.000.000,00" ,
+                                    data-mask-reverse="true" value="" id="valorIdeal" class="form-control"
                                     style="width: 380px;" placeholder="0,00" />
-    
+
                             </div>
                         </div>
-                        
+
                     </div>
                 </label>
 
@@ -248,7 +251,7 @@
 
     <!--*****************************INICIO CODIGOS JS ***************************************************-->
     <script>
-
+       
         input = document.getElementById("txtMensal")
         input.addEventListener("mousewheel", function (event) { this.blur() })
 
